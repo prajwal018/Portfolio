@@ -1,0 +1,368 @@
+:root {
+	--primary: #c0eef2;
+	--secondary: #537fe7;
+	--tertiary: #181823;
+}
+
+/* NAVBAR CSS */
+.nav-link,
+.navbar-brand {
+	color: var(--primary);
+}
+.navbar-brand {
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+/* NAVBAR CSS */
+/* BODY CSS */
+
+.body {
+	background-color: whitesmoke;
+}
+/* DEFINE CSS */
+.body #define {
+	position: absolute;
+	text-align: center;
+	padding: 0;
+	height: 36rem;
+}
+#define img {
+	width: 100%;
+	height: 36rem;
+}
+
+#define .image-overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: transparent;
+	padding: 20px;
+	color: var(--tertiary);
+	text-align: left;
+}
+.mail-link,
+.contact {
+	width: 60%;
+	display: flex;
+	text-align: left;
+}
+#define .image-overlay .mail-link h5 {
+	width: 50%;
+	font-size: larger;
+	font-weight: bolder;
+	height: fit-content;
+}
+
+#define .image-overlay .contact p {
+	width: 50%;
+	font-size: smaller;
+	font-weight: lighter;
+	height: fit-content;
+}
+#define h4 {
+	color: var(--secondary);
+	margin-bottom: 20px;
+}
+
+#define button {
+	background-color: var(--tertiary);
+	color: #e9f8f9;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+/* DEFINE CSS */
+/* CONTENT-WRAP CSS */
+
+.content-wrap {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 10px;
+}
+.content-wrap h2 {
+	margin: 40px;
+	text-align: center;
+	background-color: var(--primary);
+	color: var(--secondary);
+	height: fit-content;
+	border-radius: 20px;
+}
+/* CONTENT-WRAP CSS */
+/* sERVICE CSS */
+#services {
+	color: var(--secondary);
+	background-color: var(--tertiary);
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+div.row {
+	justify-content: center;
+}
+.card {
+	margin: 10px;
+	width: 100%;
+}
+.card-body h5 {
+	color: var(--tertiary);
+}
+.card-body {
+	text-align: center;
+	margin: 20px;
+	padding: 20px 20px;
+	width: fit-content;
+	height: 250px;
+}
+
+/* sERVICE CSS */
+/* ABOUT CSS */
+#about {
+	text-align: left;
+	color: var(--primary);
+	background-color: var(--secondary);
+	padding: 50px;
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+.aboutme-text {
+	width: 50%;
+	text-align: left;
+}
+.aboutme-text h3 {
+	background-color: var(--primary);
+	border-radius: 20px;
+	padding-left: 20px;
+	color: var(--secondary);
+}
+.aboutme-text p,
+.aboutme-text h6,
+.aboutme-text a {
+	padding: 20px;
+}
+
+.aboutme-pic {
+	width: 50%;
+	text-align: center;
+}
+.aboutme-pic h2 {
+	color: var(--tertiary);
+}
+
+.aboutme-pic img {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 20px var(--secondary);
+}
+.aboutme-pic h3 {
+	color: var(--secondary);
+}
+
+.aboutme-pic p {
+	color: var(--primary);
+	font-size: 16px;
+	padding: 10px;
+}
+/* ABOUT CSS */
+/* SKILLS CSS */
+#skills {
+	text-align: right;
+	background-color: var(--tertiary);
+	border-radius: 5px;
+	border: var(--tertiary);
+	color: var(--primary);
+	padding: 50px;
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.skills-text {
+	width: 50%;
+	text-align: right;
+}
+.skills-text h3 {
+	background-color: var(--primary);
+	padding-right: 20px;
+	color: var(--secondary);
+	border-radius: 20px;
+}
+.skills-text p,
+.skills-text h6,
+.skills-text a {
+	padding: 20px;
+}
+
+.skills-pic {
+	width: 50%;
+	text-align: center;
+	padding: 10px;
+}
+.skills-pic h2 {
+	color: var(--tertiary);
+}
+
+.skills-pic YoutubeEmbed {
+	height: 300px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	box-shadow: 0px 0px 10px var(--secondary);
+}
+.skills-pic h3 {
+	color: var(--secondary);
+}
+
+.skills-pic p {
+	color: var(--primary);
+	font-size: 16px;
+	padding: 10px;
+}
+/* SKILLS CSS */
+/* PROJECTS CSS */
+#projects {
+	color: var(--primary);
+	background-color: var(--secondary);
+	border: var(--tertiary);
+	padding: 50px;
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+	border-radius: 5px;
+}
+#projects h2 {
+	margin: 20px;
+	text-align: center;
+	background-color: var(--primary);
+	color: var(--secondary);
+	height: fit-content;
+	border-radius: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.carousel {
+	width: 100%;
+	background-color: var(--tertiary);
+}
+.carousel-control-prev,
+.carousel-control-next {
+	width: auto;
+	padding: 10px;
+	color: var(--tertiary);
+	font-size: 18px;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-inner {
+	height: fit-content;
+	align-items: center;
+	color: var(--secondary);
+	margin: auto;
+}
+.carousel-caption {
+	color: var(--tertiary);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+	visibility: var(--primary);
+	background-color: var(--primary);
+}
+
+.carousel-indicators {
+	bottom: 10px;
+	color: var(--tertiary);
+}
+
+.carousel-indicators li {
+	background-color: var(--secondary);
+	border-color: var(--primary);
+}
+
+.carousel-indicators .active {
+	background-color: var(--primary);
+}
+/* PROJECTS CSS */
+
+/* FOOTER CSS */
+/* CONTACT CSS */
+#contact {
+	width: 100%;
+	background-color: var(--tertiary);
+	color: var(--primary);
+	padding: 20px;
+	text-align: center;
+}
+
+#contact h5 {
+	text-align: center;
+	margin: 30px;
+}
+
+#contact i {
+	font-size: 30px;
+	margin: 20px;
+}
+.small {
+	font-weight: lighter;
+	text-align: center;
+	margin: 10px;
+	opacity: 80%;
+}
+#contact button {
+	width: 150px;
+	height: 50px;
+	background-color: var(--secondary);
+	color: var(--primary);
+	border-radius: 5px;
+}
+#contact h2 {
+	text-align: center;
+}
+
+#contact a {
+	color: var(--secondary);
+}
+
+#contact .myinfo {
+	display: flex;
+	justify-content: center;
+}
+/* CONTACT CSS */
+
+/* COPYRIGHT CSS */
+footer .copyright {
+	text-align: center;
+	background-color: var(--tertiary);
+	color: var(--primary);
+	padding: 10px;
+	margin: 0;
+}
+/* COPYRIGHT CSS */
+/* FOOTER CSS */
+
+/* YOUTUBE CSS */
+.video-responsive {
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+	height: 0;
+}
+
+.video-responsive iframe {
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+/* YOUTUBE CSS */
