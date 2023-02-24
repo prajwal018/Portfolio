@@ -3,7 +3,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './css/navbar.css';
+import './css/home.css';
 const navbar = () => {
 	return (
 		<div>

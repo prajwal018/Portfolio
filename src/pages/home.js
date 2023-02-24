@@ -160,8 +160,7 @@ const Home = () => {
 				<section id="skills">
 					<div className="skills-pic">
 						<YoutubeEmbed embedId="rokGy0huYEA" />
-						<h2>Hi There!</h2>
-
+						<h2>The best Tedtalk Ever!</h2>
 						<p>Learn more about me and my background.</p>
 					</div>
 					<div className="skills-text">

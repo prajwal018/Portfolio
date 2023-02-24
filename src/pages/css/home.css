@@ -293,8 +293,8 @@ div.row {
 /* PROJECTS CSS */
 
 /* FOOTER CSS */
-/* CONTACT CSS */
-#contact {
+
+#footer {
 	width: 100%;
 	background-color: var(--tertiary);
 	color: var(--primary);
@@ -302,12 +302,12 @@ div.row {
 	text-align: center;
 }
 
-#contact h5 {
+#footer h5 {
 	text-align: center;
 	margin: 30px;
 }
 
-#contact i {
+#footer i {
 	font-size: 30px;
 	margin: 20px;
 }
@@ -317,28 +317,26 @@ div.row {
 	margin: 10px;
 	opacity: 80%;
 }
-#contact button {
+#footer button {
 	width: 150px;
 	height: 50px;
 	background-color: var(--secondary);
 	color: var(--primary);
 	border-radius: 5px;
 }
-#contact h2 {
+#footer h2 {
 	text-align: center;
 }
 
-#contact a {
+#footer a {
 	color: var(--secondary);
 }
 
-#contact .myinfo {
+#footer .myinfo {
 	display: flex;
 	justify-content: center;
 }
-/* CONTACT CSS */
 
-/* COPYRIGHT CSS */
 footer .copyright {
 	text-align: center;
 	background-color: var(--tertiary);
@@ -346,7 +344,6 @@ footer .copyright {
 	padding: 10px;
 	margin: 0;
 }
-/* COPYRIGHT CSS */
 /* FOOTER CSS */
 
 /* YOUTUBE CSS */
@@ -366,3 +363,63 @@ footer .copyright {
 }
 
 /* YOUTUBE CSS */
+
+/* CONTACT CSS */
+#contact h1 {
+	text-align: center;
+	padding-top: 40px;
+}
+#page-title {
+	text-align: center;
+	background-color: var(--tertiary);
+	color: var(--primary);
+}
+
+#page-title ul.list-nav a {
+	padding: 15px;
+	text-decoration: none;
+	color: var(--primary);
+}
+
+#page-title ul.list-nav {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 40px;
+	padding-left: 0;
+}
+
+#quick-support h5 {
+	text-align: left;
+	margin: 30px;
+}
+#quick-support p {
+	text-align: left;
+	margin: 50px;
+}
+#contact div.small {
+	font-weight: lighter;
+	text-align: left;
+	margin: 0 60px;
+	opacity: 80%;
+}
+#quick-support svg {
+	font-size: 30px;
+	margin: 20px 20px;
+}
+#comment form {
+	background-color: var(--primary);
+	border-radius: 5px;
+	text-align: left;
+	padding: 20px;
+	text-align: center;
+}
+#comment input,
+#comment textarea {
+	width: 50%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	height: fit-content;
+}
+
+/* CONTACT CSS */

@@ -10,23 +10,23 @@ import {
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './css/contact.css';
+import './css/home.css';
 
 const Contact = () => {
 	return (
 		<div>
 			<div id="contact">
-				<section id="define">
+				<section id="page-title">
 					<h1>CONTACTS</h1>
 					<ul className="list-nav">
-						<Link to="/home" style={{ padding: '5px', color: '#c0eef2' }}>
+						<Link to="/home">
 							<h6>Home</h6>
 						</Link>
 						<h4 style={{ padding: '10px' }}>
 							<BsDashLg />
 						</h4>
 
-						<Link to="/contact" style={{ paddingTop: '5px', color: '#537fe7' }}>
+						<Link to="/contact" style={{ color: '#537fe7' }}>
 							<h6>Contact</h6>
 						</Link>
 					</ul>
@@ -41,26 +41,17 @@ const Contact = () => {
 						</p>
 						<div className="myinfo">
 							<h5 style={{ marginBottom: '1rem' }}>
-								<BsTelephoneFill
-									fontStyle={{ size: '30px' }}
-									style={{ margin: '20px' }}
-								/>
+								<BsTelephoneFill />
 								Phone Me 24/7: <br />
 								<div className="small">+918 766 813 856</div>
 							</h5>
 							<h5 style={{ marginBottom: '1rem' }}>
-								<BsEnvelopeFill
-									fontStyle={{ size: '30px' }}
-									style={{ margin: '20px' }}
-								/>
+								<BsEnvelopeFill />
 								Email Me 24/7: <br />
 								<div className="small">+918 766 813 856</div>
 							</h5>
 							<h5 style={{ marginBottom: '1rem' }}>
-								<BsLinkedin
-									fontStyle={{ size: '30px' }}
-									style={{ margin: '20px' }}
-								/>
+								<BsLinkedin />
 								Follow Me: <br />
 								<div className="small">+918 766 813 856</div>
 							</h5>
@@ -75,7 +66,6 @@ const Contact = () => {
 								name="name"
 								required
 								placeholder="Name"
-								style={{ marginBottom: '1rem' }}
 							/>
 							<br />
 							<br />
@@ -85,7 +75,6 @@ const Contact = () => {
 								name="email"
 								required
 								placeholder="Email"
-								style={{ marginBottom: '1rem' }}
 							/>
 							<br />
 							<br />
@@ -94,8 +83,9 @@ const Contact = () => {
 								name="message"
 								required
 								placeholder="Message"
-								style={{ marginBottom: '1rem' }}
 							></textarea>
+							<br />
+							<br />
 							<input
 								type="submit"
 								value="Leave a comment"
