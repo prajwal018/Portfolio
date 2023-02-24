@@ -23,7 +23,7 @@ const footer = () => {
 						<br />
 						<br />
 						Email Me: <br />
-						<div className="small">+918 766 813 856</div>
+						<div className="small">prajwalkuchewar3@gmail.com</div>
 					</h5>
 					<h5>
 						<BsLink />

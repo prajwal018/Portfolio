@@ -48,12 +48,12 @@ const Contact = () => {
 							<h5 style={{ marginBottom: '1rem' }}>
 								<BsEnvelopeFill />
 								Email Me 24/7: <br />
-								<div className="small">+918 766 813 856</div>
+								<div className="small">prajwalkuchewar3@gmail.com</div>
 							</h5>
 							<h5 style={{ marginBottom: '1rem' }}>
 								<BsLinkedin />
 								Follow Me: <br />
-								<div className="small">+918 766 813 856</div>
+								<div className="small">prajwal018</div>
 							</h5>
 						</div>
 					</section>
