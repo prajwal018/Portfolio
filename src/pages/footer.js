@@ -11,12 +11,14 @@ const footer = () => {
 			<section id="footer">
 				<h2>Let's Talk!</h2>
 				<div className="myinfo">
-					<h5>
+					<h5 style={{ padding: '5px 50px ', margin: '30px' }}>
 						<BsTelephoneFill />
 						<br />
 						<br />
 						Phone Me: <br />
-						<div className="small">+918 766 813 856</div>
+						<div className="small">
+							<p>+ 918 766 813 856 </p>
+						</div>
 					</h5>
 					<h5>
 						<BsEnvelopeFill />
@@ -30,7 +32,7 @@ const footer = () => {
 						<br />
 						<br />
 						Follow Me: <br />
-						<div className="small">+918 766 813 856</div>
+						<div className="small">linkedin.com/in/prajwal018</div>
 					</h5>
 				</div>
 				<Link to="/contact">

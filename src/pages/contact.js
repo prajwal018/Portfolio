@@ -40,20 +40,20 @@ const Contact = () => {
 							we build, and every interation we create
 						</p>
 						<div className="myinfo">
-							<h5 style={{ marginBottom: '1rem' }}>
+							<h5>
 								<BsTelephoneFill />
 								Phone Me 24/7: <br />
 								<div className="small">+918 766 813 856</div>
 							</h5>
-							<h5 style={{ marginBottom: '1rem' }}>
+							<h5>
 								<BsEnvelopeFill />
 								Email Me 24/7: <br />
 								<div className="small">prajwalkuchewar3@gmail.com</div>
 							</h5>
-							<h5 style={{ marginBottom: '1rem' }}>
+							<h5>
 								<BsLinkedin />
 								Follow Me: <br />
-								<div className="small">prajwal018</div>
+								<div className="small">linkedin.com/in/prajwal018</div>
 							</h5>
 						</div>
 					</section>

@@ -110,10 +110,12 @@ const About = () => {
 						<br /> everything we do.
 					</p>
 				</section>
-				<section id="feedback">
-					<Flip />
-				</section>
 			</div>
+			<section id="feedback">
+				<Flip />
+				<Flip />
+				<Flip />
+			</section>
 		</div>
 	);
 };
