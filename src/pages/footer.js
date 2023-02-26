@@ -11,18 +11,14 @@ const footer = () => {
 			<section id="footer">
 				<h2>Let's Talk!</h2>
 				<div className="myinfo">
-					<h5 style={{ padding: '5px 50px ', margin: '30px' }}>
+					<h5>
 						<BsTelephoneFill />
 						<br />
-						<br />
 						Phone Me: <br />
-						<div className="small">
-							<p>+ 918 766 813 856 </p>
-						</div>
+						<div className="small">prajwalkuchewar3@gmail.com</div>
 					</h5>
 					<h5>
 						<BsEnvelopeFill />
-						<br />
 						<br />
 						Email Me: <br />
 						<div className="small">prajwalkuchewar3@gmail.com</div>
@@ -30,14 +26,12 @@ const footer = () => {
 					<h5>
 						<BsLink />
 						<br />
-						<br />
 						Follow Me: <br />
 						<div className="small">linkedin.com/in/prajwal018</div>
 					</h5>
 				</div>
-				<Link to="/contact">
-					<button>Hire Me</button>
-				</Link>
+				<br />
+				<Link to="/contact">Hire Me </Link>
 			</section>
 			<div className="copyright">
 				<p>&copy; 2023 Prajwal Inc.</p>

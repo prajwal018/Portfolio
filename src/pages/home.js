@@ -34,24 +34,14 @@ const Home = () => {
 						Algorithms. Passionate about web development and user experience
 						design.
 					</p>
-					<div className="mail-link">
-						<h5>Email:</h5>
-						<h5>Linked In:</h5>
-					</div>
-					<div className="contact" style={{ cursor: 'pointer' }}>
-						<p to="prajwalkuchewar3@gmail.com">prajwalkuchewar3@gmail.com</p>
-						<Link to="https://www.linkedin.com/in/prajwal018">
-							<p>linkedin.com/in/prajwal018</p>
-						</Link>
-					</div>
+
 					<button
 						type="button"
-						className="btn btn-dark"
-						style={{ backgroundColor: '#537fe7' }}
+						style={{ backgroundColor: '#537fe7', marginRight: '5%' }}
 					>
 						Download CV
 					</button>
-					<button type="button" className="btn btn-dark">
+					<button type="button" style={{ backgroundColor: '#181823' }}>
 						Hire Me Now
 					</button>
 				</div>
@@ -65,8 +55,10 @@ const Home = () => {
 								<CCardBody>
 									<CCardTitle>Web Development</CCardTitle>
 									<CCardText>
-										With supporting text below as a natural lead-in to
-										additional content.
+										<p>
+											With supporting text below as a natural lead-in to
+											additional content.
+										</p>
 									</CCardText>
 									<CButton href="#">Go somewhere</CButton>
 								</CCardBody>
@@ -77,8 +69,10 @@ const Home = () => {
 								<CCardBody>
 									<CCardTitle>Software Development</CCardTitle>
 									<CCardText>
-										With supporting text below as a natural lead-in to
-										additional content.
+										<p>
+											With supporting text below as a natural lead-in to
+											additional content.
+										</p>
 									</CCardText>
 									<CButton href="#">Go somewhere</CButton>
 								</CCardBody>
@@ -89,8 +83,10 @@ const Home = () => {
 								<CCardBody>
 									<CCardTitle>UX Design</CCardTitle>
 									<CCardText>
-										With supporting text below as a natural lead-in to
-										additional content.
+										<p>
+											With supporting text below as a natural lead-in to
+											additional content.
+										</p>
 									</CCardText>
 									<CButton href="#">Go somewhere</CButton>
 								</CCardBody>
@@ -100,9 +96,9 @@ const Home = () => {
 				</section>
 
 				<section id="about">
-					<div className="aboutme-text">
+					<div className="aboutme-text" style={{ textAlign: 'left' }}>
 						<h3>Need Creative Website?</h3>
-						<h3 style={{ width: '50%' }}>I can Help You!</h3>
+						<h3>I can Help You!</h3>
 						<p>
 							Proactive student eager to contribute to the coding community
 							through hard work and dedication to quality. Seeking to use
@@ -163,18 +159,9 @@ const Home = () => {
 						<h2>The best Tedtalk Ever!</h2>
 						<p>Learn more about me and my background.</p>
 					</div>
-					<div className="skills-text">
+					<div className="skills-text" style={{ textAlign: 'right' }}>
 						<h3>Need Creative Website?</h3>
-						<h3
-							style={{
-								width: '50%',
-								left: '50%',
-								transform: 'translate(100%)',
-								textAlign: 'center',
-							}}
-						>
-							I can Help You!
-						</h3>
+						<h3>I can Help You!</h3>
 						<p>
 							Proactive student eager to contribute to the coding community
 							through hard work and dedication to quality. Seeking to use

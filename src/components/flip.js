@@ -6,10 +6,10 @@ function App() {
 	const [flip, setFlip] = useState(false);
 	return (
 		<ReactCardFlip isFlipped={flip} flipDirection="horizontal">
-			<div className="flip-front">
+			<div className="react-card-front">
 				<img
 					className="card-img-top"
-					src="https://picsum.photos/720/1080"
+					src="https://picsum.photos/360/240"
 					alt="nice"
 				/>
 				<button
@@ -21,7 +21,7 @@ function App() {
 				</button>
 			</div>
 			<div>
-				<div className="flip-back">
+				<div className="react-card-back">
 					<div className="card-body">
 						<h4 className="card-title">Client Testimonials</h4>
 						<p className="card-text" style={{ overflow: 'hidden' }}>
@@ -31,15 +31,15 @@ function App() {
 						</p>
 						<h5 className="card-subtitle mb-2 text-muted">Ronald Green</h5>
 						<h6 className="card-subtitle mb-2 text-muted">UX Designer</h6>
-						<div className="feedback-button">
-							<button
-								type="btn"
-								className="flip-switch"
-								onClick={() => setFlip(!flip)}
-							>
-								<BsFillArrowRightCircleFill />
-							</button>
-						</div>
+					</div>
+					<div className="feedback-button">
+						<button
+							type="btn"
+							className="flip-switch"
+							onClick={() => setFlip(!flip)}
+						>
+							<BsFillArrowRightCircleFill />
+						</button>
 					</div>
 				</div>
 			</div>

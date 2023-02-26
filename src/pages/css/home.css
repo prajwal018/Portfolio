@@ -39,42 +39,30 @@ section#define img {
 	height: 36rem;
 }
 
-section#define .image-overlay {
+.image-overlay {
 	position: absolute;
-
-	z-index: 1;
-}
-.mail-link,
-.contact {
-	width: 60%;
-	display: flex;
+	display: block;
+	top: 20%;
+	left: 20%;
+	width: 50%;
 	text-align: left;
-}
-section#define .image-overlay .mail-link h5 {
-	width: 50%;
-	font-size: larger;
-	font-weight: bolder;
-	height: fit-content;
+	color: var(--primary);
+	padding: 20px;
+	overflow: hidden;
 }
 
-section#define .image-overlay .contact p {
-	width: 50%;
-	font-size: smaller;
-	font-weight: lighter;
-	height: fit-content;
-}
 section#define h4 {
 	color: var(--secondary);
 	margin-bottom: 20px;
 }
 
 section#define button {
-	background-color: var(--tertiary);
-	color: #e9f8f9;
+	color: var(--primary);
 	border: none;
-	padding: 10px 20px;
-	border-radius: 5px;
-	margin-right: 10px;
+	padding: 5px 10px;
+	font-size: small;
+	border-radius: 2px;
+	margin: 10px 0;
 	cursor: pointer;
 }
 
@@ -108,19 +96,29 @@ div.row {
 	justify-content: center;
 	width: 100%;
 }
-.card {
-	margin: 10px;
+div.card {
+	margin: 5% 5%;
 	width: 100%;
 	height: 90%;
 	overflow: hidden;
 }
 .card-body h5 {
 	color: var(--tertiary);
+	height: 20%;
+}
+.card-body p {
+	color: var(--tertiary);
+	height: 40%;
+}
+.card-body a {
+	margin-top: 5%;
+	height: 20%;
+	overflow: hidden;
 }
 .card-body {
 	text-align: center;
 	margin: 5%;
-	padding: 10%;
+	padding: 5%;
 	width: 90%;
 	height: 250px;
 	overflow: hidden;
@@ -132,6 +130,9 @@ div.row {
 	text-align: left;
 	color: var(--primary);
 	background-color: var(--secondary);
+}
+#about,
+#skills {
 	padding: 50px;
 	display: flex;
 	margin-top: 10px;
@@ -139,100 +140,67 @@ div.row {
 	border-radius: 5px;
 	width: 100%;
 }
-.aboutme-text {
-	width: 50%;
-	text-align: left;
+#skills {
+	text-align: right;
+	background-color: var(--tertiary);
+	color: var(--primary);
 }
+.aboutme-text,
+.skills-text {
+	margin: 5%;
+	width: 100%;
+}
+.skills-text h3,
 .aboutme-text h3 {
 	background-color: var(--primary);
 	border-radius: 20px;
-	padding-left: 20px;
+	padding: 0 5%;
 	color: var(--secondary);
 }
 .aboutme-text p,
 .aboutme-text h6,
-.aboutme-text a {
-	padding: 20px;
-}
-
-.aboutme-pic {
-	width: 50%;
-	text-align: center;
-}
-.aboutme-pic h2 {
-	color: var(--tertiary);
-}
-
-.aboutme-pic img {
-	width: 300px;
-	height: 300px;
-	border-radius: 50%;
-	margin-bottom: 20px;
-	box-shadow: 0px 0px 20px var(--secondary);
-}
-.aboutme-pic h3 {
-	color: var(--secondary);
-}
-
-.aboutme-pic p {
-	color: var(--primary);
-	font-size: 16px;
-	padding: 10px;
-}
-/* ABOUT CSS */
-/* SKILLS CSS */
-#skills {
-	text-align: right;
-	background-color: var(--tertiary);
-	border-radius: 5px;
-	border: var(--tertiary);
-	color: var(--primary);
-	padding: 50px;
-	display: flex;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	width: 100%;
-}
-.skills-text {
-	width: 50%;
-	text-align: right;
-}
-.skills-text h3 {
-	background-color: var(--primary);
-	padding-right: 20px;
-	color: var(--secondary);
-	border-radius: 20px;
-}
+.aboutme-text a,
 .skills-text p,
 .skills-text h6,
 .skills-text a {
-	padding: 20px;
+	padding: 3% 5%;
+}
+.skills-text button,
+.aboutme-text button {
+	padding: 1% 2%;
 }
 
-.skills-pic {
-	width: 50%;
+.skills-pic,
+.aboutme-pic {
+	width: 100%;
+	margin: 5%;
 	text-align: center;
-	padding: 10px;
 }
+.aboutme-pic h2,
 .skills-pic h2 {
 	color: var(--tertiary);
 }
 
+.aboutme-pic img,
 .skills-pic YoutubeEmbed {
-	height: 300px;
-	border-radius: 5px;
-	margin-bottom: 10px;
-	box-shadow: 0px 0px 10px var(--secondary);
+	padding: 5%;
+	width: 70%;
+	border-radius: 50%;
 }
-.skills-pic h3 {
+.skills-pic h3,
+.aboutme-pic h3 {
 	color: var(--secondary);
 }
-
+.aboutme-pic p,
 .skills-pic p {
 	color: var(--primary);
 	font-size: 16px;
-	padding: 10px;
+	padding: 5%;
 }
+
+/* ABOUT CSS */
+/* SKILLS CSS */
+
 /* SKILLS CSS */
 /* PROJECTS CSS */
 #projects {
@@ -308,47 +276,34 @@ div.row {
 	width: 100%;
 	background-color: var(--tertiary);
 	color: var(--primary);
-	padding: 20px;
+	padding: 2.5% 5%;
 	text-align: center;
+	display: block;
 }
 
-#footer h5 {
+div.myinfo {
+	display: flex;
+	justify-content: center;
+}
+.myinfo h5 {
 	text-align: center;
-	margin: 30px;
+	margin: 2% 2%;
 }
 
-#footer i {
-	font-size: 30px;
-	margin: 20px;
-}
 div.small {
 	font-weight: lighter;
 	font-size: smaller;
 	text-align: center;
-	margin: 10px;
+	margin: 2.5%;
 	opacity: 80%;
 }
-#footer button {
-	width: 150px;
-	height: 50px;
+#footer a {
+	padding: 1% 2%;
 	background-color: var(--secondary);
 	color: var(--primary);
 	border-radius: 5px;
-}
-#footer h2 {
-	text-align: center;
-}
-
-#footer a {
-	color: var(--secondary);
-}
-
-div.myinfo h5 {
-	padding: 5px;
-}
-#footer div.myinfo {
-	display: flex;
-	justify-content: center;
+	cursor: pointer;
+	text-decoration: none;
 }
 
 footer .copyright {
@@ -358,6 +313,7 @@ footer .copyright {
 	padding: 10px;
 	margin: 0;
 }
+
 /* FOOTER CSS */
 
 /* YOUTUBE CSS */
@@ -401,24 +357,27 @@ footer .copyright {
 	padding-bottom: 40px;
 	padding-left: 0;
 }
-
+section#quick-support div.myinfo {
+	display: block;
+	justify-content: left;
+}
 #quick-support h5 {
 	text-align: left;
 	margin: 30px;
+	margin-bottom: 10%;
 }
 #quick-support p {
 	text-align: left;
 	margin: 50px;
 }
 #contact div.small {
-	font-weight: lighter;
+	position: absolute;
 	text-align: left;
-	margin: 0 60px;
-	opacity: 80%;
+	margin: 0 6%;
 }
 #quick-support svg {
 	font-size: 30px;
-	margin: 20px 20px;
+	margin: 2% 2% 0 2%;
 }
 #comment form {
 	background-color: var(--primary);
@@ -494,27 +453,32 @@ section#breif {
 /* FEEDBACK CSS */
 section#feedback {
 	width: 100%;
-	padding: 30px;
 	display: flex;
-	height: 30rem;
-	justify-content: center;
-	text-align: center;
+	margin: 5rem 0;
+	justify-content: space-evenly;
 }
-div.flip-front,
-div.flip-back {
-	height: 80%;
-	margin: 20px;
-	padding: 20px;
+div.react-card-flip {
+	height: fit-content;
+}
+div.react-card-front {
+	margin: 0 1rem;
+	padding: 2px;
+	flex-basis: 100%;
+}
+div.react-card-back {
+	margin: 0 1rem;
+	padding: 2px;
+	flex-basis: 100%;
 }
 img.card-img-top {
-	height: 100%;
-	border-radius: 50%;
+	border-radius: 10px;
+	height: 50%;
 }
 div.card-body {
-	background-color: var(--primary);
-	color: var(--tertiary);
 	height: 100%;
-	border-radius: 5px;
+	width: 80%;
+	margin: 0 10%;
+	background-color: var(--primary);
 }
 h4.card-title,
 p.card-text {
@@ -530,3 +494,67 @@ button.flip-switch {
 
 /* FEEDBACK CSS */
 /* ABOUT  CSS */
+
+@media only screen and (max-width: 1000px) {
+	.myinfo,
+	section#skills,
+	section#about {
+		width: 100%;
+		flex-direction: column;
+		text-align: center;
+		padding: 10%;
+	}
+	/*  */
+	section#feedback {
+		flex-wrap: wrap;
+	}
+	div.card {
+		margin: 3% 3%;
+	}
+
+	/* */
+	section#projects,
+	section#services .myinfo {
+		padding: 5%;
+	}
+	div.aboutme-text,
+	div.aboutme-pic,
+	div.skills-text,
+	div.skills-pic {
+		margin: 0%;
+	}
+	.skills-text h3,
+	.aboutme-text h3,
+	.aboutme-text p,
+	.aboutme-text a,
+	.skills-text p,
+	.aboutme-text a {
+		text-align: center;
+	}
+	.aboutme-text a,
+	.skills-text a {
+		padding: 1% 1%;
+	}
+	h1 {
+		font-size: 2em;
+	} /* reduce h1 to h2 */
+	h2 {
+		font-size: 1.5em;
+	} /* reduce h2 to h3 */
+	h3 {
+		font-size: 1.17em;
+	} /* reduce h3 to h4 */
+	h4 {
+		font-size: 1em;
+	} /* reduce h4 to h5 */
+	h5 {
+		font-size: 0.83em;
+	} /* reduce h5 to h6 */
+	h6 {
+		font-size: 0.67em;
+	} /* reduce h6 to smallest size */
+	p {
+		font-size: 0.83em; /* reduce font-size */
+		line-height: 1.2em; /* adjust line-height */
+	}
+}
