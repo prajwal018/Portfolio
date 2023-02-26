@@ -21,26 +21,28 @@
 	background-color: whitesmoke;
 }
 /* DEFINE CSS */
-.body #define {
-	position: absolute;
+section {
+	display: block;
+	width: 100%;
+}
+section#define {
+	width: 100%;
+
+	position: relative;
 	text-align: center;
 	padding: 0;
+	margin: 0;
 	height: 36rem;
 }
-#define img {
+section#define img {
 	width: 100%;
 	height: 36rem;
 }
 
-#define .image-overlay {
+section#define .image-overlay {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color: transparent;
-	padding: 20px;
-	color: var(--tertiary);
-	text-align: left;
+
+	z-index: 1;
 }
 .mail-link,
 .contact {
@@ -48,25 +50,25 @@
 	display: flex;
 	text-align: left;
 }
-#define .image-overlay .mail-link h5 {
+section#define .image-overlay .mail-link h5 {
 	width: 50%;
 	font-size: larger;
 	font-weight: bolder;
 	height: fit-content;
 }
 
-#define .image-overlay .contact p {
+section#define .image-overlay .contact p {
 	width: 50%;
 	font-size: smaller;
 	font-weight: lighter;
 	height: fit-content;
 }
-#define h4 {
+section#define h4 {
 	color: var(--secondary);
 	margin-bottom: 20px;
 }
 
-#define button {
+section#define button {
 	background-color: var(--tertiary);
 	color: #e9f8f9;
 	border: none;
@@ -80,8 +82,8 @@
 /* CONTENT-WRAP CSS */
 
 .content-wrap {
-	width: 1000px;
-	margin: 0 auto;
+	width: 80%;
+	margin: 0 10%;
 	padding: 10px;
 }
 .content-wrap h2 {
@@ -95,6 +97,7 @@
 /* CONTENT-WRAP CSS */
 /* sERVICE CSS */
 #services {
+	width: 100%;
 	color: var(--secondary);
 	background-color: var(--tertiary);
 	border-radius: 5px;
@@ -103,10 +106,12 @@
 }
 div.row {
 	justify-content: center;
+	width: 100%;
 }
 .card {
 	margin: 10px;
 	width: 100%;
+	height: 90%;
 	overflow: hidden;
 }
 .card-body h5 {
@@ -114,10 +119,11 @@ div.row {
 }
 .card-body {
 	text-align: center;
-	margin: 20px;
-	padding: 20px 20px;
-	width: fit-content;
+	margin: 5%;
+	padding: 10%;
+	width: 90%;
 	height: 250px;
+	overflow: hidden;
 }
 
 /* sERVICE CSS */
@@ -131,6 +137,7 @@ div.row {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	border-radius: 5px;
+	width: 100%;
 }
 .aboutme-text {
 	width: 50%;
@@ -184,6 +191,7 @@ div.row {
 	display: flex;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	width: 100%;
 }
 .skills-text {
 	width: 50%;
@@ -236,6 +244,7 @@ div.row {
 	width: 100%;
 	display: inline-block;
 	border-radius: 5px;
+	width: 100%;
 }
 #projects h2 {
 	margin: 20px;
@@ -434,6 +443,7 @@ footer .copyright {
 section#my-process {
 	text-align: center;
 	padding-bottom: 50px;
+	width: 100%;
 }
 section#my-process h2 {
 	margin-top: 50px;
@@ -478,10 +488,12 @@ a#process-card.btn.btn-primary {
 /* BRIEF CSS */
 section#breif {
 	padding-bottom: 50px;
+	width: 100%;
 }
 /* BRIEF CSS */
 /* FEEDBACK CSS */
 section#feedback {
+	width: 100%;
 	padding: 30px;
 	display: flex;
 	height: 30rem;
