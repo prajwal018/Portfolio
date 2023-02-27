@@ -4,7 +4,6 @@ import React from 'react';
 import { BsDashLg } from 'react-icons/bs';
 
 import { Link } from 'react-router-dom';
-import './css/home.css';
 
 const Projects = () => {
 	return (

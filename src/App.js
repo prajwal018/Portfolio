@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import './App.css';
 import About from './pages/about';
 import Contact from './pages/contact';
 import Footer from './pages/footer';
@@ -16,7 +17,7 @@ export default function App() {
 					<Route path="/about" component={About} />
 					<Route path="/projects" component={Projects} />
 					<Route path="/contact" component={Contact} />
-					<Route path="/home" component={Home} />
+					<Route path="/" component={Home} />
 				</Switch>
 			</div>
 			<Footer />

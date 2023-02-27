@@ -14,7 +14,6 @@ import { BsChevronRight, BsDashLg } from 'react-icons/bs';
 import Flip from '../components/flip';
 
 import { Link } from 'react-router-dom';
-import './css/home.css';
 
 const About = () => {
 	return (
