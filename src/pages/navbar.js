@@ -20,7 +20,7 @@ const navbar = () => {
 					>
 						<span className="navbar-toggler-icon"></span>
 					</button>
-					<Link className="navbar-brand" to="/home">
+					<Link className="navbar-brand" to="/">
 						PRAJWAL.
 					</Link>
 					<div

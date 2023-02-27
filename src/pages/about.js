@@ -70,8 +70,8 @@ const About = () => {
 							</CCard>
 						</CCol>
 					</CRow>
-					<CRow>
-						<CCol sm={3} style={{ marginLeft: '50px' }}>
+					<CRow className="bottom">
+						<CCol sm={3}>
 							<CCard id="process-card">
 								<h4>03</h4>
 								<CCardBody id="process-card">

@@ -35,10 +35,7 @@ const Home = () => {
 						design.
 					</p>
 
-					<button
-						type="button"
-						style={{ backgroundColor: '#537fe7', marginRight: '5%' }}
-					>
+					<button className="button" style={{ marginRight: '5%' }}>
 						Download CV
 					</button>
 					<button type="button" style={{ backgroundColor: '#181823' }}>

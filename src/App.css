@@ -5,8 +5,15 @@
 }
 
 /* NAVBAR CSS */
-.nav-link,
-.navbar-brand {
+a.nav-link,
+a.navbar-brand {
+	color: var(--primary);
+}
+button.navbar-toggler {
+	background-color: var(--secondary);
+}
+a.nav-link:focus,
+a.navbar-brand:focus {
 	color: var(--primary);
 }
 .navbar-brand {
@@ -56,8 +63,10 @@ section#define h4 {
 	margin-bottom: 20px;
 }
 
-section#define button {
+section#define button,
+section#define button.button {
 	color: var(--primary);
+	background-color: var(--secondary);
 	border: none;
 	padding: 5px 10px;
 	font-size: small;
@@ -92,32 +101,32 @@ section#define button {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-div.row {
+#services div.row {
 	justify-content: center;
 	width: 100%;
 }
-div.card {
+#services div.card {
 	margin: 5% 5%;
 	width: 100%;
 	height: 90%;
 	overflow: hidden;
 }
-.card-body h5 {
+#services .card-body h5 {
 	color: var(--tertiary);
 	height: 20%;
 }
-.card-body p {
+#services .card-body p {
 	color: var(--tertiary);
 	height: 40%;
 }
-.card-body a {
+#services .card-body a {
 	margin-top: 5%;
 	height: 20%;
 	overflow: hidden;
 }
-.card-body {
+#services .card-body {
 	text-align: center;
-	margin: 5%;
+	margin: 5% 5%;
 	padding: 5%;
 	width: 90%;
 	height: 250px;
@@ -413,6 +422,13 @@ section#my-process p {
 div#process-card.card {
 	background-color: var(--primary);
 	height: fit-content;
+	margin: 3%;
+}
+div.row {
+	width: 100%;
+}
+div.row.bottom {
+	margin-left: 20%;
 }
 div#process-card.card h4 {
 	padding: 15px;
@@ -474,7 +490,7 @@ img.card-img-top {
 	border-radius: 10px;
 	height: 50%;
 }
-div.card-body {
+#feedback div.card-body {
 	height: 100%;
 	width: 80%;
 	margin: 0 10%;
@@ -503,6 +519,12 @@ button.flip-switch {
 		flex-direction: column;
 		text-align: center;
 		padding: 10%;
+	}
+	div.row,
+	div.col-sm-3 {
+		width: 100%;
+		flex-direction: column;
+		text-align: center;
 	}
 	/*  */
 	section#feedback {
@@ -556,5 +578,15 @@ button.flip-switch {
 	p {
 		font-size: 0.83em; /* reduce font-size */
 		line-height: 1.2em; /* adjust line-height */
+	}
+	div.col-sm-3 {
+		margin: 0%;
+	}
+	div.row {
+		margin: 0%;
+	}
+	div.row.bottom {
+		margin: 0%;
+		flex-basis: 100%;
 	}
 }
