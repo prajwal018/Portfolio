@@ -144,6 +144,8 @@ const Home = () => {
 						<img
 							alt="A beautiful sunset over the mountains"
 							src="https://avatars.githubusercontent.com/u/90618646?s=400&u=4da8a69b49d0c936615ec3c26eb1f304a1a298ae&v=4"
+							width="320"
+							height="320"
 						/>
 						<h2>Hi There!</h2>
 						<p>Learn more about me and my background.</p>
@@ -237,6 +239,8 @@ const Home = () => {
 									alt="A beautiful sunset over the mountains"
 									src="https://picsum.photos/1080/720"
 									className="d-block w-100"
+									width="720"
+									height="480"
 								/>
 								<div className="carousel-caption">
 									<h5>Project 1</h5>
@@ -250,6 +254,8 @@ const Home = () => {
 									alt="A beautiful sunset over the mountains"
 									src="https://picsum.photos/1080/720"
 									className="d-block w-100"
+									width="720"
+									height="480"
 								/>
 								<div className="carousel-caption">
 									<h5>Project 2</h5>
@@ -264,6 +270,8 @@ const Home = () => {
 									alt="A beautiful sunset over the mountains"
 									src="https://picsum.photos/1080/720"
 									className="d-block w-100"
+									width="720"
+									height="480"
 								/>
 								<div className="carousel-caption">
 									<h5>Project 3</h5>
