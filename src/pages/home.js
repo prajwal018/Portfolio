@@ -44,7 +44,7 @@ const Home = () => {
 				</div>
 			</section>
 
-			<section id="content-wrap">
+			<main className="content-wrap">
 				<section id="services">
 					<CRow>
 						<CCol sm={3}>
@@ -308,7 +308,7 @@ const Home = () => {
 						</button>
 					</div>
 				</section>
-			</section>
+			</main>
 		</div>
 	);
 };

@@ -79,12 +79,12 @@ section#define button.button {
 /* DEFINE CSS */
 /* CONTENT-WRAP CSS */
 
-#content-wrap {
+.content-wrap {
 	width: 80%;
 	margin: 50px 10%;
 	padding: 10px;
 }
-#content-wrap h2 {
+.content-wrap h2 {
 	margin: 40px;
 	text-align: center;
 	background-color: var(--primary);
