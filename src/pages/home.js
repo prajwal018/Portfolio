@@ -35,7 +35,18 @@ const Home = () => {
 						design.
 					</p>
 
-					<button className="button" style={{ marginRight: '5%' }}>
+					<button
+						className="button"
+						style={{ marginRight: '5%' }}
+						onClick={() => {
+							var resumeLink = document.createElement('a');
+							resumeLink.href = './CoverLetter.pdf';
+							resumeLink.download = 'Resume.pdf';
+							document.body.appendChild(resumeLink);
+							resumeLink.click();
+							document.body.removeChild(resumeLink);
+						}}
+					>
 						Download CV
 					</button>
 					<button type="button" style={{ backgroundColor: '#181823' }}>
@@ -170,7 +181,7 @@ const Home = () => {
 							design.
 						</p>
 						<h6>You Can Follow Me also Here:</h6>
-						<Link to="https://www.instagram.com/praj_wal_018/">
+						<link to="https://www.instagram.com/praj_wal_018/">
 							<button
 								style={{
 									borderRadius: '20%',
@@ -180,7 +191,7 @@ const Home = () => {
 							>
 								<BsInstagram />
 							</button>
-						</Link>
+						</link>
 						<Link to="https://www.linkedin.com/in/prajwal018">
 							<button
 								style={{

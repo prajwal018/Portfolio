@@ -10,7 +10,9 @@
 		"@testing-library/user-event": "^13.5.0",
 		"bootstrap": "^5.2.3",
 		"confusing-browser-globals": "^1.0.11",
+		"express": "^4.18.2",
 		"gh-pages": "^5.0.0",
+		"mysql": "^2.18.1",
 		"npm-gui": "^4.0.4",
 		"react": "^18.2.0",
 		"react-card-flip": "^1.2.0",
@@ -24,6 +26,7 @@
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -b master -d build",
 		"start": "react-scripts start",
+		"server": "node backend/server.js",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
