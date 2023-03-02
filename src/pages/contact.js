@@ -1,6 +1,9 @@
 /* eslint-disable react/style-prop-object */
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import {
 	BsDashLg,
 	BsEnvelopeFill,
@@ -8,10 +11,36 @@ import {
 	BsTelephoneFill,
 } from 'react-icons/bs';
 
-import React from 'react';
-import { Link } from 'react-router-dom';
-
 const Contact = () => {
+	const [name, setName] = useState('');
+	const [email, setEmail] = useState('');
+	const [message, setMessage] = useState('');
+	const handleSubmit = (event) => {
+		event.preventDefault();
+
+		// Send POST request to server using fetch API
+		fetch('/contact', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				name,
+				email,
+				message,
+			}),
+		})
+			.then((response) => response.text())
+			.then((data) => {
+				console.log(data);
+			});
+
+		// Reset form input values
+		setName('');
+		setEmail('');
+		setMessage('');
+	};
+
 	return (
 		<div>
 			<div id="contact">
@@ -58,13 +87,15 @@ const Contact = () => {
 					</section>
 					<section id="comment">
 						<h2>Get in Touch</h2>
-						<form>
+						<form onSubmit={handleSubmit}>
 							<input
 								type="name"
 								id="name"
 								name="name"
 								required
 								placeholder="Name"
+								value={name}
+								onChange={(event) => setName(event.target.value)}
 							/>
 							<br />
 							<br />
@@ -74,6 +105,8 @@ const Contact = () => {
 								name="email"
 								required
 								placeholder="Email"
+								value={email}
+								onChange={(event) => setEmail(event.target.value)}
 							/>
 							<br />
 							<br />
@@ -82,6 +115,8 @@ const Contact = () => {
 								name="message"
 								required
 								placeholder="Message"
+								value={message}
+								onChange={(event) => setMessage(event.target.value)}
 							></textarea>
 							<br />
 							<br />

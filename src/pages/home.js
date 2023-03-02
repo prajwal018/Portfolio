@@ -11,9 +11,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React from 'react';
 import { BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs';
-import { Link } from 'react-router-dom';
-
-import YoutubeEmbed from '../components/youtube';
+import { LiteYoutubeEmbed } from 'react-lite-yt-embed';
+import { NavLink } from 'react-router-dom';
 
 const Home = () => {
 	return (
@@ -116,7 +115,7 @@ const Home = () => {
 							design.
 						</p>
 						<h6>You Can Follow Me also Here:</h6>
-						<Link to="https://www.instagram.com/prxjwxl.018/">
+						<NavLink to="https://www.instagram.com/prxjwxl.018/">
 							<button
 								style={{
 									borderRadius: '20%',
@@ -126,8 +125,8 @@ const Home = () => {
 							>
 								<BsInstagram />
 							</button>
-						</Link>
-						<Link to="https://www.linkedin.com/in/prajwal018">
+						</NavLink>
+						<NavLink to="https://www.linkedin.com/in/prajwal018">
 							<button
 								style={{
 									borderRadius: '20%',
@@ -137,8 +136,8 @@ const Home = () => {
 							>
 								<BsLinkedin />
 							</button>
-						</Link>
-						<Link to="https://github.com/prajwal018">
+						</NavLink>
+						<NavLink to="https://github.com/prajwal018">
 							<button
 								style={{
 									borderRadius: '20%',
@@ -149,7 +148,7 @@ const Home = () => {
 							>
 								<BsGithub />
 							</button>
-						</Link>
+						</NavLink>
 					</div>
 					<div className="aboutme-pic">
 						<img
@@ -165,7 +164,7 @@ const Home = () => {
 
 				<section id="skills">
 					<div className="skills-pic">
-						<YoutubeEmbed embedId="rokGy0huYEA" />
+						<LiteYoutubeEmbed id="Y2jyjfcp1as"></LiteYoutubeEmbed>
 						<h2>The best Tedtalk Ever!</h2>
 						<p>Learn more about me and my background.</p>
 					</div>
@@ -181,7 +180,7 @@ const Home = () => {
 							design.
 						</p>
 						<h6>You Can Follow Me also Here:</h6>
-						<link to="https://www.instagram.com/praj_wal_018/">
+						<NavLink to="https://www.instagram.com/praj_wal_018/">
 							<button
 								style={{
 									borderRadius: '20%',
@@ -191,8 +190,8 @@ const Home = () => {
 							>
 								<BsInstagram />
 							</button>
-						</link>
-						<Link to="https://www.linkedin.com/in/prajwal018">
+						</NavLink>
+						<NavLink to="https://www.linkedin.com/in/prajwal018">
 							<button
 								style={{
 									borderRadius: '20%',
@@ -202,8 +201,8 @@ const Home = () => {
 							>
 								<BsLinkedin />
 							</button>
-						</Link>
-						<Link to="https://github.com/prajwal018">
+						</NavLink>
+						<NavLink to="https://github.com/prajwal018">
 							<button
 								style={{
 									borderRadius: '20%',
@@ -214,7 +213,7 @@ const Home = () => {
 							>
 								<BsGithub />
 							</button>
-						</Link>
+						</NavLink>
 					</div>
 				</section>
 
