@@ -2,14 +2,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import PageTitle from '../components/page_title';
 
-import {
-	BsDashLg,
-	BsEnvelopeFill,
-	BsLinkedin,
-	BsTelephoneFill,
-} from 'react-icons/bs';
+import { BsEnvelopeFill, BsLinkedin, BsTelephoneFill } from 'react-icons/bs';
 
 const Contact = () => {
 	const [name, setName] = useState('');
@@ -44,21 +39,8 @@ const Contact = () => {
 	return (
 		<div>
 			<div id="contact">
-				<section id="page-title">
-					<h1>CONTACTS</h1>
-					<ul className="list-nav">
-						<Link to="/home">
-							<h6>Home</h6>
-						</Link>
-						<h4 style={{ padding: '10px' }}>
-							<BsDashLg />
-						</h4>
+				<PageTitle title="Contact"></PageTitle>
 
-						<Link to="/contact" style={{ color: '#537fe7' }}>
-							<h6>Contact</h6>
-						</Link>
-					</ul>
-				</section>
 				<div className="content-wrap">
 					<section id="quick-support">
 						<h2>Quick Support</h2>

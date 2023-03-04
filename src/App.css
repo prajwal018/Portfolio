@@ -38,13 +38,12 @@ section#define {
 	position: relative;
 	text-align: center;
 	padding: 0;
-	margin-bottom: 50px;
 	height: 36rem;
 	overflow: hidden;
 }
 section#define img {
 	width: 100%;
-	height: 36rem;
+	height: 100%;
 }
 
 .image-overlay {
@@ -81,7 +80,7 @@ section#define button.button {
 
 .content-wrap {
 	width: 80%;
-	margin: 50px 10%;
+	margin: 10px 10%;
 	padding: 10px;
 }
 .content-wrap h2 {
@@ -99,8 +98,7 @@ section#define button.button {
 	color: var(--secondary);
 	background-color: var(--tertiary);
 	border-radius: 5px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin: 10px 0;
 }
 #services div.row {
 	justify-content: center;
@@ -353,6 +351,10 @@ footer .copyright {
 	color: var(--primary);
 }
 
+#page-title h1 {
+	padding: 20px 0;
+	margin: 0;
+}
 #page-title ul.list-nav a {
 	padding: 15px;
 	text-decoration: none;
@@ -362,8 +364,7 @@ footer .copyright {
 #page-title ul.list-nav {
 	display: flex;
 	justify-content: center;
-	padding-bottom: 40px;
-	padding-left: 0;
+	padding: 0 0 40px 0;
 }
 section#quick-support div.myinfo {
 	display: block;
@@ -510,7 +511,7 @@ button.flip-switch {
 /* FEEDBACK CSS */
 /* ABOUT  CSS */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 768px) {
 	.myinfo,
 	section#skills,
 	section#about {
