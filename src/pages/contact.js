@@ -1,6 +1,5 @@
 /* eslint-disable react/style-prop-object */
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+
 import React, { useState } from 'react';
 import PageTitle from '../components/page_title';
 

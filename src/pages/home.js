@@ -7,8 +7,7 @@ import {
 	CCol,
 	CRow,
 } from '@coreui/react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+
 import React from 'react';
 import { BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { LiteYoutubeEmbed } from 'react-lite-yt-embed';
@@ -20,7 +19,7 @@ const Home = () => {
 			<section id="define">
 				<img
 					alt="A beautiful sunset over the mountains"
-					src="https://picsum.photos/720/1080"
+					src="https://picsum.photos/1080/720"
 				/>
 				<div className="image-overlay">
 					<h3>Hi! I'm Prajwal Kuchewar -</h3>
@@ -62,10 +61,8 @@ const Home = () => {
 								<CCardBody>
 									<CCardTitle>Web Development</CCardTitle>
 									<CCardText>
-										<p>
-											With supporting text below as a natural lead-in to
-											additional content.
-										</p>
+										With supporting text below as a natural lead-in to
+										additional content.
 									</CCardText>
 									<CButton href="#">Go somewhere</CButton>
 								</CCardBody>
@@ -76,10 +73,8 @@ const Home = () => {
 								<CCardBody>
 									<CCardTitle>Software Development</CCardTitle>
 									<CCardText>
-										<p>
-											With supporting text below as a natural lead-in to
-											additional content.
-										</p>
+										With supporting text below as a natural lead-in to
+										additional content.
 									</CCardText>
 									<CButton href="#">Go somewhere</CButton>
 								</CCardBody>
@@ -90,10 +85,8 @@ const Home = () => {
 								<CCardBody>
 									<CCardTitle>UX Design</CCardTitle>
 									<CCardText>
-										<p>
-											With supporting text below as a natural lead-in to
-											additional content.
-										</p>
+										With supporting text below as a natural lead-in to
+										additional content.
 									</CCardText>
 									<CButton href="#">Go somewhere</CButton>
 								</CCardBody>
@@ -247,7 +240,7 @@ const Home = () => {
 							<div className="carousel-item active">
 								<img
 									alt="A beautiful sunset over the mountains"
-									src="https://picsum.photos/1080/720"
+									src="https://picsum.photos/720/480"
 									className="d-block w-100"
 									width="720"
 									height="480"
@@ -262,7 +255,7 @@ const Home = () => {
 							<div className="carousel-item">
 								<img
 									alt="A beautiful sunset over the mountains"
-									src="https://picsum.photos/1080/720"
+									src="https://picsum.photos/720/480"
 									className="d-block w-100"
 									width="720"
 									height="480"
@@ -278,7 +271,7 @@ const Home = () => {
 							<div className="carousel-item">
 								<img
 									alt="A beautiful sunset over the mountains"
-									src="https://picsum.photos/1080/720"
+									src="https://picsum.photos/720/480"
 									className="d-block w-100"
 									width="720"
 									height="480"

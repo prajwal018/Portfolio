@@ -7,8 +7,7 @@ import {
 	CCol,
 	CRow,
 } from '@coreui/react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+
 import React from 'react';
 import { BsChevronRight } from 'react-icons/bs';
 import Flip from '../components/flip';
