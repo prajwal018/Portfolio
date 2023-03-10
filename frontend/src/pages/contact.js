@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import PageTitle from '../components/page_title';
 
 import { BsEnvelopeFill, BsLinkedin, BsTelephoneFill } from 'react-icons/bs';
@@ -37,21 +39,19 @@ const Contact = () => {
 		});
 		const data = await res.json();
 		if (data.status === 420 || !data) {
-			window.alert('Invalid ');
-			console.log('Invalid ');
+			toast.error('Invalid');
 		} else {
-			window.alert('Message Sent ');
-			console.log('Message Sent  ');
-
+			toast.info('Message Sent');
+			setUser({ name: '', email: '', message: '' });
 			history.push('/contact');
 		}
 	};
 
 	return (
 		<div>
+			<ToastContainer />
 			<div id="contact">
 				<PageTitle title="Contact"></PageTitle>
-
 				<div className="content-wrap">
 					<section id="quick-support">
 						<h2>Quick Support</h2>

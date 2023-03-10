@@ -9,6 +9,7 @@ a.nav-link,
 a.navbar-brand {
 	color: var(--primary);
 }
+
 button.navbar-toggler {
 	background-color: var(--secondary);
 }
