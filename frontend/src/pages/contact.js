@@ -1,19 +1,30 @@
 /* eslint-disable react/style-prop-object */
 
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import PageTitle from '../components/page_title';
 
 import { BsEnvelopeFill, BsLinkedin, BsTelephoneFill } from 'react-icons/bs';
 
 const Contact = () => {
-	const [name, setName] = useState('');
-	const [email, setEmail] = useState('');
-	const [message, setMessage] = useState('');
-	const handleSubmit = (event) => {
-		event.preventDefault();
+	const history = useHistory();
+	const [user, setUser] = useState({
+		name: '',
+		email: '',
+		message: '',
+	});
+	let name, value;
+	const handleInputs = (e) => {
+		console.log(e);
+		name = e.target.name;
+		value = e.target.value;
+		setUser({ ...user, [name]: value });
+	};
 
-		// Send POST request to server using fetch API
-		fetch('/contact', {
+	const PostData = async (e) => {
+		e.preventDefault();
+		const { name, email, message } = user;
+		const res = await fetch('/contact', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
@@ -23,16 +34,17 @@ const Contact = () => {
 				email,
 				message,
 			}),
-		})
-			.then((response) => response.text())
-			.then((data) => {
-				console.log(data);
-			});
+		});
+		const data = await res.json();
+		if (data.status === 420 || !data) {
+			window.alert('Invalid ');
+			console.log('Invalid ');
+		} else {
+			window.alert('Message Sent ');
+			console.log('Message Sent  ');
 
-		// Reset form input values
-		setName('');
-		setEmail('');
-		setMessage('');
+			history.push('/contact');
+		}
 	};
 
 	return (
@@ -68,15 +80,15 @@ const Contact = () => {
 					</section>
 					<section id="comment">
 						<h2>Get in Touch</h2>
-						<form onSubmit={handleSubmit}>
+						<form method="POST">
 							<input
 								type="name"
 								id="name"
 								name="name"
 								required
 								placeholder="Name"
-								value={name}
-								onChange={(event) => setName(event.target.value)}
+								value={user.name}
+								onChange={handleInputs}
 							/>
 							<br />
 							<br />
@@ -86,8 +98,8 @@ const Contact = () => {
 								name="email"
 								required
 								placeholder="Email"
-								value={email}
-								onChange={(event) => setEmail(event.target.value)}
+								value={user.email}
+								onChange={handleInputs}
 							/>
 							<br />
 							<br />
@@ -96,8 +108,8 @@ const Contact = () => {
 								name="message"
 								required
 								placeholder="Message"
-								value={message}
-								onChange={(event) => setMessage(event.target.value)}
+								value={user.message}
+								onChange={handleInputs}
 							></textarea>
 							<br />
 							<br />
@@ -105,6 +117,7 @@ const Contact = () => {
 								type="submit"
 								value="Leave a comment"
 								style={{ backgroundColor: '#537fe7', color: '#fff' }}
+								onClick={PostData}
 							/>
 						</form>
 					</section>

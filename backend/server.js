@@ -1,11 +1,25 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 
+const port = 3001;
 const app = express();
 
-app.get('/api', (req, res) => {
-	res.json({ users: ['UserOne', 'UserTwo', 'UserThree'] });
+// Use bodyParser middleware to parse JSON body of POST request
+app.use(bodyParser.json());
+
+// Define a route to handle POST request
+app.post('/contact', (req, res) => {
+	const { name, email, message } = req.body;
+
+	// Do something with the data received from the client
+	console.log(`Received message from ${name} <${email}>: ${message}`);
+
+	// Send a response back to the client
+	const response = { message: 'Message received' };
+	res.send(response);
 });
 
-app.listen(5000, () => {
-	console.log('Server started on port 5000');
+// Start the server
+app.listen(port, () => {
+	console.log(`Server listening on port ${port}`);
 });
