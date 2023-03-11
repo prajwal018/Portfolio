@@ -11,7 +11,7 @@ import {
 import React from 'react';
 import { BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { LiteYoutubeEmbed } from 'react-lite-yt-embed';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Home = () => {
 	return (
@@ -19,7 +19,7 @@ const Home = () => {
 			<section id="define">
 				<img
 					alt="A beautiful sunset over the mountains"
-					src="https://picsum.photos/1080/720"
+					src={process.env.PUBLIC_URL + '/define-bg.png'}
 				/>
 				<div className="image-overlay">
 					<h3>Hi! I'm Prajwal Kuchewar -</h3>
@@ -110,6 +110,7 @@ const Home = () => {
 						<h6>You Can Follow Me also Here:</h6>
 						<NavLink to="https://www.instagram.com/prxjwxl.018/">
 							<button
+								className="btn-instagram"
 								style={{
 									borderRadius: '20%',
 									borderColor: 'transparent',
@@ -121,6 +122,7 @@ const Home = () => {
 						</NavLink>
 						<NavLink to="https://www.linkedin.com/in/prajwal018">
 							<button
+								className="btn-linkedin"
 								style={{
 									borderRadius: '20%',
 									backgroundColor: '#0077b5',
@@ -132,6 +134,7 @@ const Home = () => {
 						</NavLink>
 						<NavLink to="https://github.com/prajwal018">
 							<button
+								className="btn-github"
 								style={{
 									borderRadius: '20%',
 									borderColor: 'transparent',
@@ -146,7 +149,7 @@ const Home = () => {
 					<div className="aboutme-pic">
 						<img
 							alt="A beautiful sunset over the mountains"
-							src="https://avatars.githubusercontent.com/u/90618646?s=400&u=4da8a69b49d0c936615ec3c26eb1f304a1a298ae&v=4"
+							src={process.env.PUBLIC_URL + '/aboutme-pic.png'}
 							width="320"
 							height="320"
 						/>
@@ -175,6 +178,7 @@ const Home = () => {
 						<h6>You Can Follow Me also Here:</h6>
 						<NavLink to="https://www.instagram.com/praj_wal_018/">
 							<button
+								className="btn-instagram"
 								style={{
 									borderRadius: '20%',
 									borderColor: 'transparent',
@@ -186,6 +190,7 @@ const Home = () => {
 						</NavLink>
 						<NavLink to="https://www.linkedin.com/in/prajwal018">
 							<button
+								className="btn-linkedin"
 								style={{
 									borderRadius: '20%',
 									backgroundColor: '#0077b5',
@@ -195,8 +200,9 @@ const Home = () => {
 								<BsLinkedin />
 							</button>
 						</NavLink>
-						<NavLink to="https://github.com/prajwal018">
+						<Link to="https://github.com/prajwal018">
 							<button
+								className="btn-github"
 								style={{
 									borderRadius: '20%',
 									borderColor: 'transparent',
@@ -206,7 +212,7 @@ const Home = () => {
 							>
 								<BsGithub />
 							</button>
-						</NavLink>
+						</Link>
 					</div>
 				</section>
 
@@ -240,7 +246,7 @@ const Home = () => {
 							<div className="carousel-item active">
 								<img
 									alt="A beautiful sunset over the mountains"
-									src="https://picsum.photos/720/480"
+									src={process.env.PUBLIC_URL + '/define-bg.png'}
 									className="d-block w-100"
 									width="720"
 									height="480"
@@ -255,7 +261,7 @@ const Home = () => {
 							<div className="carousel-item">
 								<img
 									alt="A beautiful sunset over the mountains"
-									src="https://picsum.photos/720/480"
+									src={process.env.PUBLIC_URL + '/define-bg.png'}
 									className="d-block w-100"
 									width="720"
 									height="480"
@@ -271,7 +277,7 @@ const Home = () => {
 							<div className="carousel-item">
 								<img
 									alt="A beautiful sunset over the mountains"
-									src="https://picsum.photos/720/480"
+									src={process.env.PUBLIC_URL + '/define-bg.png'}
 									className="d-block w-100"
 									width="720"
 									height="480"
