@@ -39,18 +39,18 @@ app.post(
 		// handle form submission
 		const errors = validationResult(req);
 		if (!errors.isEmpty()) {
-			console.log({ errors: errors.array() });
-			res.status(422).send({ message: 'Error submitting comment' });
+			// console.log({ errors: errors.array() });
+			res.status(422).send({ message: 'Invalid Form Inputs' });
 		} else {
 			//creating sql query to be passed to database
 			const { name, email, message } = req.body;
 			const sql = 'INSERT INTO reviews (name, email, message) VALUES (?, ?, ?)';
 			connection.query(sql, [name, email, message], (err, results) => {
 				if (err) {
-					console.log(err);
-					res.status(422).send({ message: 'Error submitting comment' });
+					// console.log(err);
+					res.status(422).send({ message: 'Database Error' });
 				} else {
-					console.log(results);
+					// console.log(results);
 					res.status(200).send({ message: 'Comment submitted successfully' });
 				}
 			});

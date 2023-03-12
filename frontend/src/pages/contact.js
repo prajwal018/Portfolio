@@ -39,11 +39,11 @@ const Contact = () => {
 		});
 		const data = await res.json();
 		if (res.status === 422 || !data) {
-			console.log(data);
+			// console.log(data);
 			toast.error('Invalid Inputs');
 		} else {
 			toast.info('Message Sent');
-			console.log(data);
+			// console.log(data);
 
 			setUser({ name: '', email: '', message: '' });
 			history.push('/contact');
