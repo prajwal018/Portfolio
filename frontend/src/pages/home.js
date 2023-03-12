@@ -11,7 +11,6 @@ import {
 import React from 'react';
 import { BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { LiteYoutubeEmbed } from 'react-lite-yt-embed';
-import { Link, NavLink } from 'react-router-dom';
 
 const Home = () => {
 	return (
@@ -108,7 +107,7 @@ const Home = () => {
 							design.
 						</p>
 						<h6>You Can Follow Me also Here:</h6>
-						<NavLink to="https://www.instagram.com/prxjwxl.018/">
+						<a href="https://www.instagram.com/prxjwxl.018/">
 							<button
 								className="btn-instagram"
 								style={{
@@ -119,8 +118,8 @@ const Home = () => {
 							>
 								<BsInstagram />
 							</button>
-						</NavLink>
-						<NavLink to="https://www.linkedin.com/in/prajwal018">
+						</a>
+						<a href="https://www.linkedin.com/in/prajwal018">
 							<button
 								className="btn-linkedin"
 								style={{
@@ -131,8 +130,8 @@ const Home = () => {
 							>
 								<BsLinkedin />
 							</button>
-						</NavLink>
-						<NavLink to="https://github.com/prajwal018">
+						</a>
+						<a href="https://github.com/prajwal018">
 							<button
 								className="btn-github"
 								style={{
@@ -144,7 +143,7 @@ const Home = () => {
 							>
 								<BsGithub />
 							</button>
-						</NavLink>
+						</a>
 					</div>
 					<div className="aboutme-pic">
 						<img
@@ -176,7 +175,7 @@ const Home = () => {
 							design.
 						</p>
 						<h6>You Can Follow Me also Here:</h6>
-						<NavLink to="https://www.instagram.com/praj_wal_018/">
+						<a href="https://www.instagram.com/prxjwxl.018/">
 							<button
 								className="btn-instagram"
 								style={{
@@ -187,8 +186,8 @@ const Home = () => {
 							>
 								<BsInstagram />
 							</button>
-						</NavLink>
-						<NavLink to="https://www.linkedin.com/in/prajwal018">
+						</a>
+						<a href="https://www.linkedin.com/in/prajwal018">
 							<button
 								className="btn-linkedin"
 								style={{
@@ -199,8 +198,8 @@ const Home = () => {
 							>
 								<BsLinkedin />
 							</button>
-						</NavLink>
-						<Link to="https://github.com/prajwal018">
+						</a>
+						<a href="https://github.com/prajwal018">
 							<button
 								className="btn-github"
 								style={{
@@ -212,7 +211,7 @@ const Home = () => {
 							>
 								<BsGithub />
 							</button>
-						</Link>
+						</a>
 					</div>
 				</section>
 

@@ -38,10 +38,13 @@ const Contact = () => {
 			}),
 		});
 		const data = await res.json();
-		if (data.status === 420 || !data) {
-			toast.error('Invalid');
+		if (res.status === 422 || !data) {
+			console.log(data);
+			toast.error('Invalid Inputs');
 		} else {
 			toast.info('Message Sent');
+			console.log(data);
+
 			setUser({ name: '', email: '', message: '' });
 			history.push('/contact');
 		}
