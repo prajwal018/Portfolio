@@ -31,7 +31,7 @@ const About = () => {
 					</p>
 					<CRow>
 						<CCol sm={3}>
-							<CCard id="process-card">
+							<CCard id="process-card" role="process-card">
 								<h4>01</h4>
 								<CCardBody id="process-card">
 									<CCardTitle id="process-card">Web Development</CCardTitle>
@@ -43,7 +43,7 @@ const About = () => {
 							</CCard>
 						</CCol>
 						<CCol sm={3}>
-							<CCard id="process-card">
+							<CCard id="process-card" role="process-card">
 								<h4>02</h4>
 								<CCardBody id="process-card">
 									<CCardTitle id="process-card">Web Development</CCardTitle>
@@ -57,7 +57,7 @@ const About = () => {
 					</CRow>
 					<CRow className="bottom">
 						<CCol sm={3}>
-							<CCard id="process-card">
+							<CCard id="process-card" role="process-card">
 								<h4>03</h4>
 								<CCardBody id="process-card">
 									<CCardTitle id="process-card">Web Development</CCardTitle>
@@ -69,7 +69,7 @@ const About = () => {
 							</CCard>
 						</CCol>
 						<CCol sm={3}>
-							<CCard id="process-card">
+							<CCard id="process-card" role="process-card">
 								<h4>04</h4>
 								<CCardBody id="process-card">
 									<CCardTitle id="process-card">Web Development</CCardTitle>

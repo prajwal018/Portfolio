@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
-function App() {
+function Flip() {
 	const [flip, setFlip] = useState(false);
 	return (
 		<ReactCardFlip isFlipped={flip} flipDirection="horizontal">
@@ -47,4 +47,4 @@ function App() {
 	);
 }
 
-export default App;
+export default Flip;
