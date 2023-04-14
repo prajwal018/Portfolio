@@ -10,7 +10,6 @@ const Projects = () => {
 			<div
 				className="content-wrap"
 				style={{
-					backgroundColor: '#537fe7',
 					borderRadius: '20px',
 					height: '30rem',
 				}}

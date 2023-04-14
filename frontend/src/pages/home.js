@@ -1,5 +1,4 @@
 import {
-	CButton,
 	CCard,
 	CCardBody,
 	CCardText,
@@ -16,10 +15,7 @@ const Home = () => {
 	return (
 		<div id="body">
 			<section id="define">
-				<img
-					alt="A beautiful sunset over the mountains"
-					src={process.env.PUBLIC_URL + '/define-bg.png'}
-				/>
+				<div></div>
 				<div className="image-overlay">
 					<h3>Hi! I'm Prajwal Kuchewar -</h3>
 					<h4>Software Engineer</h4>
@@ -37,7 +33,7 @@ const Home = () => {
 						style={{ marginRight: '5%' }}
 						onClick={() => {
 							var resumeLink = document.createElement('a');
-							resumeLink.href = './CoverLetter.pdf';
+							resumeLink.href = '/Resume.pdf';
 							resumeLink.download = 'Resume.pdf';
 							document.body.appendChild(resumeLink);
 							resumeLink.click();
@@ -46,7 +42,12 @@ const Home = () => {
 					>
 						Download CV
 					</button>
-					<button type="button" style={{ backgroundColor: '#181823' }}>
+					<button
+						type="button"
+						onClick={() =>
+							window.open('https://www.linkedin.com/in/prajwal018')
+						}
+					>
 						Hire Me Now
 					</button>
 				</div>
@@ -63,7 +64,7 @@ const Home = () => {
 										With supporting text below as a natural lead-in to
 										additional content.
 									</CCardText>
-									<CButton href="#">Go somewhere</CButton>
+									<button href="#">Go somewhere</button>
 								</CCardBody>
 							</CCard>
 						</CCol>
@@ -75,7 +76,7 @@ const Home = () => {
 										With supporting text below as a natural lead-in to
 										additional content.
 									</CCardText>
-									<CButton href="#">Go somewhere</CButton>
+									<button href="#">Go somewhere</button>
 								</CCardBody>
 							</CCard>
 						</CCol>
@@ -87,7 +88,7 @@ const Home = () => {
 										With supporting text below as a natural lead-in to
 										additional content.
 									</CCardText>
-									<CButton href="#">Go somewhere</CButton>
+									<button href="#">Go somewhere</button>
 								</CCardBody>
 							</CCard>
 						</CCol>
@@ -107,43 +108,37 @@ const Home = () => {
 							design.
 						</p>
 						<h6>You Can Follow Me also Here:</h6>
-						<a href="https://www.instagram.com/prxjwxl.018/">
-							<button
-								className="btn-instagram"
-								style={{
-									borderRadius: '20%',
-									borderColor: 'transparent',
-									backgroundColor: '#f96868',
-								}}
-							>
-								<BsInstagram />
-							</button>
-						</a>
-						<a href="https://www.linkedin.com/in/prajwal018">
-							<button
-								className="btn-linkedin"
-								style={{
-									borderRadius: '20%',
-									backgroundColor: '#0077b5',
-									borderColor: 'transparent',
-								}}
-							>
-								<BsLinkedin />
-							</button>
-						</a>
-						<a href="https://github.com/prajwal018">
-							<button
-								className="btn-github"
-								style={{
-									borderRadius: '20%',
-									borderColor: 'transparent',
-									backgroundColor: '#000000',
-									color: 'white',
-								}}
-							>
-								<BsGithub />
-							</button>
-						</a>
+						<button
+							onClick={() =>
+								window.open('https://www.instagram.com/prxjwxl.018/')
+							}
+							className="btn-instagram"
+							style={{
+								borderRadius: '20%',
+							}}
+						>
+							<BsInstagram />
+						</button>
+						<button
+							onClick={() =>
+								window.open('https://www.linkedin.com/in/prajwal018')
+							}
+							className="btn-linkedin"
+							style={{
+								borderRadius: '20%',
+							}}
+						>
+							<BsLinkedin />
+						</button>
+						<button
+							onClick={() => window.open('https://github.com/prajwal018')}
+							className="btn-github"
+							style={{
+								borderRadius: '20%',
+							}}
+						>
+							<BsGithub />
+						</button>
 					</div>
 					<div className="aboutme-pic">
 						<img
@@ -175,48 +170,41 @@ const Home = () => {
 							design.
 						</p>
 						<h6>You Can Follow Me also Here:</h6>
-						<a href="https://www.instagram.com/prxjwxl.018/">
-							<button
-								className="btn-instagram"
-								style={{
-									borderRadius: '20%',
-									borderColor: 'transparent',
-									backgroundColor: '#f96868',
-								}}
-							>
-								<BsInstagram />
-							</button>
-						</a>
-						<a href="https://www.linkedin.com/in/prajwal018">
-							<button
-								className="btn-linkedin"
-								style={{
-									borderRadius: '20%',
-									backgroundColor: '#0077b5',
-									borderColor: 'transparent',
-								}}
-							>
-								<BsLinkedin />
-							</button>
-						</a>
-						<a href="https://github.com/prajwal018">
-							<button
-								className="btn-github"
-								style={{
-									borderRadius: '20%',
-									borderColor: 'transparent',
-									backgroundColor: '#000000',
-									color: 'white',
-								}}
-							>
-								<BsGithub />
-							</button>
-						</a>
+						<button
+							onClick={() =>
+								window.open('https://www.instagram.com/prxjwxl.018/')
+							}
+							className="btn-instagram"
+							style={{
+								borderRadius: '20%',
+							}}
+						>
+							<BsInstagram />
+						</button>
+						<button
+							onClick={() =>
+								window.open('https://www.linkedin.com/in/prajwal018')
+							}
+							className="btn-linkedin"
+							style={{
+								borderRadius: '20%',
+							}}
+						>
+							<BsLinkedin />
+						</button>
+						<button
+							onClick={() => window.open('https://github.com/prajwal018')}
+							className="btn-github"
+							style={{
+								borderRadius: '20%',
+							}}
+						>
+							<BsGithub />
+						</button>
 					</div>
 				</section>
 
 				<section id="projects">
-					<h2>My Projects</h2>
 					<div id="carousel" className="carousel">
 						<div className="carousel-indicators">
 							<button
@@ -243,13 +231,14 @@ const Home = () => {
 
 						<div className="carousel-inner">
 							<div className="carousel-item active">
-								<img
-									alt="A beautiful sunset over the mountains"
-									src={process.env.PUBLIC_URL + '/define-bg.png'}
-									className="d-block w-100"
-									width="720"
-									height="480"
-								/>
+								<div
+									style={{
+										backgroundColor: '#eee',
+										color: '#000',
+										width: '150rem',
+										height: '30rem',
+									}}
+								></div>
 								<div className="carousel-caption">
 									<h5>Project 1</h5>
 									<p>
@@ -258,13 +247,14 @@ const Home = () => {
 								</div>
 							</div>
 							<div className="carousel-item">
-								<img
-									alt="A beautiful sunset over the mountains"
-									src={process.env.PUBLIC_URL + '/define-bg.png'}
-									className="d-block w-100"
-									width="720"
-									height="480"
-								/>
+								<div
+									style={{
+										backgroundColor: '#eee',
+										color: '#000',
+										width: '150rem',
+										height: '30rem',
+									}}
+								></div>
 								<div className="carousel-caption">
 									<h5>Project 2</h5>
 									<p>
@@ -274,13 +264,14 @@ const Home = () => {
 								</div>
 							</div>
 							<div className="carousel-item">
-								<img
-									alt="A beautiful sunset over the mountains"
-									src={process.env.PUBLIC_URL + '/define-bg.png'}
-									className="d-block w-100"
-									width="720"
-									height="480"
-								/>
+								<div
+									style={{
+										backgroundColor: '#eee',
+										color: '#000',
+										width: '150rem',
+										height: '30rem',
+									}}
+								></div>
 								<div className="carousel-caption">
 									<h5>Project 3</h5>
 									<p>

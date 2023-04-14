@@ -30,7 +30,11 @@ const footer = () => {
 					</h5>
 				</div>
 				<br />
-				<Link to="/contact">Hire Me </Link>
+				<Link to="/contact">
+					<button to="/contact" className="button">
+						Hire Me
+					</button>
+				</Link>
 			</section>
 			<div className="copyright">
 				<p>&copy; 2023 Prajwal Inc.</p>

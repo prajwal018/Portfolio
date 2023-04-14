@@ -1,22 +1,17 @@
 :root {
-	--primary: #c0eef2;
-	--secondary: #537fe7;
-	--tertiary: #181823;
+	--gray: #eee;
+	--tertiary: #000;
 }
-
 /* NAVBAR CSS */
-a.nav-link,
-a.navbar-brand {
-	color: var(--primary);
+
+body button {
+	border-color: var(--tertiary);
+	border-radius: 5px;
+	padding: 1% 2%;
+	cursor: pointer;
+	text-decoration: none;
 }
 
-button.navbar-toggler {
-	background-color: var(--secondary);
-}
-a.nav-link:focus,
-a.navbar-brand:focus {
-	color: var(--primary);
-}
 .navbar-brand {
 	font-size: 1.5rem;
 	letter-spacing: 2px;
@@ -24,23 +19,24 @@ a.navbar-brand:focus {
 }
 /* NAVBAR CSS */
 /* BODY CSS */
-
-.body {
-	background-color: whitesmoke;
+body {
+	align-items: center;
 }
 /* DEFINE CSS */
 section {
+	text-align: center;
 	display: block;
 	width: 100%;
 }
 section#define {
-	width: 100%;
-	background-color: var(--tertiary);
 	position: relative;
 	text-align: center;
-	padding: 0;
 	height: 36rem;
 	overflow: hidden;
+	margin: 0 2%;
+	width: 96%;
+	background-color: var(--gray);
+	border-radius: 20px;
 }
 section#define img {
 	width: 100%;
@@ -54,41 +50,33 @@ section#define img {
 	left: 20%;
 	width: 50%;
 	text-align: left;
-	color: var(--primary);
+
 	padding: 20px;
 	overflow: hidden;
 }
 
 section#define h4 {
-	color: var(--secondary);
 	margin-bottom: 20px;
 }
 
 section#define button,
 section#define button.button {
-	color: var(--primary);
-	background-color: var(--secondary);
-	border: none;
-	padding: 5px 10px;
 	font-size: small;
-	border-radius: 2px;
 	margin: 10px 0;
-	cursor: pointer;
 }
 
 /* DEFINE CSS */
 /* CONTENT-WRAP CSS */
 
-.content-wrap {
+div.content-wrap {
+	margin-left: 10%;
 	width: 80%;
-	margin: 10px 10%;
-	padding: 10px;
+	padding: 20px;
 }
 .content-wrap h2 {
 	margin: 40px;
 	text-align: center;
-	background-color: var(--primary);
-	color: var(--secondary);
+
 	height: fit-content;
 	border-radius: 20px;
 }
@@ -96,8 +84,8 @@ section#define button.button {
 /* sERVICE CSS */
 #services {
 	width: 100%;
-	color: var(--secondary);
-	background-color: var(--tertiary);
+
+	/*  */
 	border-radius: 5px;
 	margin: 10px 0;
 }
@@ -111,11 +99,9 @@ section#define button.button {
 	overflow: hidden;
 }
 #services .card-body h5 {
-	color: var(--tertiary);
 	height: 20%;
 }
 #services .card-body p {
-	color: var(--tertiary);
 	height: 40%;
 }
 #services .card-body a {
@@ -136,8 +122,9 @@ section#define button.button {
 /* ABOUT CSS */
 #about {
 	text-align: left;
-	color: var(--primary);
-	background-color: var(--secondary);
+
+	/* 
+ */
 }
 #about,
 #skills {
@@ -150,8 +137,7 @@ section#define button.button {
 }
 #skills {
 	text-align: right;
-	background-color: var(--tertiary);
-	color: var(--primary);
+	/*  */
 }
 .aboutme-text,
 .skills-text {
@@ -160,33 +146,25 @@ section#define button.button {
 }
 .skills-text h3,
 .aboutme-text h3 {
-	background-color: var(--primary);
 	border-radius: 20px;
 	padding: 0 5%;
-	color: var(--secondary);
 }
 .aboutme-text p,
 .aboutme-text h6,
-.aboutme-text a,
 .skills-text p,
-.skills-text h6,
-.skills-text a {
+.skills-text h6 {
 	padding: 3% 5%;
 }
+
 .skills-text button,
 .aboutme-text button {
-	padding: 1% 2%;
+	margin: 0 5%;
 }
-
 .skills-pic,
 .aboutme-pic {
 	width: 100%;
 	margin: 5%;
 	text-align: center;
-}
-.aboutme-pic h2,
-.skills-pic h2 {
-	color: var(--tertiary);
 }
 
 .aboutme-pic img,
@@ -194,13 +172,9 @@ section#define button.button {
 	padding: 5%;
 	border-radius: 50%;
 }
-.skills-pic h3,
-.aboutme-pic h3 {
-	color: var(--secondary);
-}
+
 .aboutme-pic p,
 .skills-pic p {
-	color: var(--primary);
 	font-size: 16px;
 	padding: 5%;
 }
@@ -211,81 +185,25 @@ section#define button.button {
 /* SKILLS CSS */
 /* PROJECTS CSS */
 #projects {
-	color: var(--primary);
-	background-color: var(--secondary);
-	border: var(--tertiary);
 	padding: 50px;
-	text-align: center;
-	width: 100%;
-	display: inline-block;
-	border-radius: 5px;
-	width: 100%;
-}
-#projects h2 {
-	margin: 20px;
-	text-align: center;
-	background-color: var(--primary);
-	color: var(--secondary);
-	height: fit-content;
-	border-radius: 20px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.carousel {
-	width: 100%;
-	background-color: var(--tertiary);
-}
-.carousel-control-prev,
-.carousel-control-next {
-	width: auto;
-	padding: 10px;
-	color: var(--tertiary);
-	font-size: 18px;
-	font-weight: bold;
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-}
-
-.carousel-inner {
-	height: fit-content;
-	align-items: center;
-	color: var(--secondary);
-	margin: auto;
 }
 .carousel-caption {
-	color: var(--tertiary);
+	color: #000 !important;
+}
+.carousel-indicators button {
+	background-color: #000 !important;
 }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-	visibility: var(--primary);
-	background-color: var(--primary);
-}
-
-.carousel-indicators {
-	bottom: 10px;
-	color: var(--tertiary);
-}
-
-.carousel-indicators li {
-	background-color: var(--secondary);
-	border-color: var(--primary);
-}
-
-.carousel-indicators .active {
-	background-color: var(--primary);
-}
 /* PROJECTS CSS */
 
 /* FOOTER CSS */
 
 #footer {
-	width: 100%;
-	background-color: var(--tertiary);
-	color: var(--primary);
+	margin: 0 2%;
+	width: 96%;
+	background-color: var(--gray);
+	border-radius: 20px;
 	padding: 2.5% 5%;
-	text-align: center;
-	display: block;
 }
 
 div.myinfo {
@@ -304,21 +222,10 @@ div.small {
 	margin: 2.5%;
 	opacity: 80%;
 }
-#footer a {
-	padding: 1% 2%;
-	background-color: var(--secondary);
-	color: var(--primary);
-	border-radius: 5px;
-	cursor: pointer;
-	text-decoration: none;
-}
 
-footer .copyright {
+div.copyright p {
 	text-align: center;
-	background-color: var(--tertiary);
-	color: var(--primary);
-	padding: 10px;
-	margin: 0;
+	margin: 1px;
 }
 
 /* FOOTER CSS */
@@ -347,9 +254,11 @@ footer .copyright {
 	padding-top: 40px;
 }
 #page-title {
+	margin: 0 2%;
+	width: 96%;
+	background-color: var(--gray);
+	border-radius: 20px;
 	text-align: center;
-	background-color: var(--tertiary);
-	color: var(--primary);
 }
 
 #page-title h1 {
@@ -359,7 +268,7 @@ footer .copyright {
 #page-title ul.list-nav a {
 	padding: 15px;
 	text-decoration: none;
-	color: var(--primary);
+	color: #000;
 }
 
 #page-title ul.list-nav {
@@ -390,7 +299,6 @@ section#quick-support div.myinfo {
 	margin: 2% 2% 0 2%;
 }
 #comment form {
-	background-color: var(--primary);
 	border-radius: 5px;
 	text-align: left;
 	padding: 20px;
@@ -400,8 +308,8 @@ section#quick-support div.myinfo {
 #comment textarea {
 	width: 50%;
 	padding: 10px;
-	border: none;
 	border-radius: 5px;
+	border-color: var(--tertiary);
 	height: fit-content;
 	resize: none;
 }
@@ -409,55 +317,15 @@ section#quick-support div.myinfo {
 
 /* ABOUT  CSS */
 /* MY PROCESS */
-section#my-process {
-	text-align: center;
-	padding-bottom: 50px;
-	width: 100%;
-}
-section#my-process h2 {
-	margin-top: 50px;
-}
-section#my-process p {
-	padding: 30px;
-}
-div#process-card.card {
-	background-color: var(--primary);
-	height: fit-content;
-	margin: 3%;
-}
-div.row {
-	width: 100%;
+#my-process {
+	margin-bottom: 10rem;
 }
 div.row.bottom {
-	margin-left: 20%;
+	justify-content: center;
 }
-div#process-card.card h4 {
-	padding: 15px;
-	margin: 0;
-	text-align: left;
-	background-color: var(--secondary);
-	border-radius: 5px;
-	border-bottom-right-radius: 60px;
-	opacity: 40%;
-	width: fit-content;
-}
-div#process-card.card-body {
-	background-color: var(--primary);
-	width: 100%;
-	text-align: left;
-	margin: 0;
-	height: fit-content;
-}
-p#process-card.card-text,
-h5#process-card.card-title {
-	height: fit-content;
-	padding: 0;
-	padding-top: 5px;
-}
-a#process-card.btn.btn-primary {
-	padding: 10px 12px;
-	margin: 10px;
-	opacity: 40%;
+div.col-sm-4 {
+	padding: 20px;
+	margin: 0%;
 }
 
 /* MY PROCESS */
@@ -471,42 +339,8 @@ section#breif {
 section#feedback {
 	width: 100%;
 	display: flex;
-	margin: 5rem 0;
 	justify-content: space-evenly;
-}
-div.react-card-flip {
-	height: fit-content;
-}
-div.react-card-front {
-	margin: 0 1rem;
-	padding: 2px;
-	flex-basis: 100%;
-}
-div.react-card-back {
-	margin: 0 1rem;
-	padding: 2px;
-	flex-basis: 100%;
-}
-img.card-img-top {
-	border-radius: 10px;
-	height: 50%;
-}
-#feedback div.card-body {
-	height: 100%;
-	width: 80%;
-	margin: 0 10%;
-	background-color: var(--primary);
-}
-h4.card-title,
-p.card-text {
-	margin: 20px 0;
-}
-button.flip-switch {
-	color: var(--tertiary);
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
-	font-size: 200%;
+	border-color: var(--tertiary);
 }
 
 /* FEEDBACK CSS */

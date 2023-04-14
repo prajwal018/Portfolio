@@ -1,5 +1,4 @@
 import {
-	CButton,
 	CCard,
 	CCardBody,
 	CCardText,
@@ -29,54 +28,51 @@ const About = () => {
 						tell, every brand we <br />
 						build, and every interaction we create must not only look beautiful.
 					</p>
-					<CRow>
-						<CCol sm={3}>
+					<br></br>
+					<CRow style={{ marginLeft: '10%' }}>
+						<CCol sm={4}>
 							<CCard id="process-card" role="process-card">
-								<h4>01</h4>
 								<CCardBody id="process-card">
 									<CCardTitle id="process-card">Web Development</CCardTitle>
 									<CCardText id="process-card">this is step 1</CCardText>
-									<CButton id="process-card" href="# ">
+									<button id="process-card" href="# ">
 										<BsChevronRight />
-									</CButton>
+									</button>
 								</CCardBody>
 							</CCard>
 						</CCol>
-						<CCol sm={3}>
+						<CCol sm={4}>
 							<CCard id="process-card" role="process-card">
-								<h4>02</h4>
 								<CCardBody id="process-card">
 									<CCardTitle id="process-card">Web Development</CCardTitle>
-									<CCardText id="process-card">this is step 2</CCardText>
-									<CButton id="process-card" href="# ">
+									<CCardText id="process-card">this is step 4</CCardText>
+									<button id="process-card" href="# ">
 										<BsChevronRight />
-									</CButton>
+									</button>
 								</CCardBody>
 							</CCard>
 						</CCol>
 					</CRow>
-					<CRow className="bottom">
-						<CCol sm={3}>
+					<CRow className="bottom" style={{ marginLeft: '10%' }}>
+						<CCol sm={4}>
 							<CCard id="process-card" role="process-card">
-								<h4>03</h4>
 								<CCardBody id="process-card">
 									<CCardTitle id="process-card">Web Development</CCardTitle>
 									<CCardText id="process-card">this is step 3</CCardText>
-									<CButton id="process-card" href="# ">
+									<button id="process-card" href="# ">
 										<BsChevronRight />
-									</CButton>
+									</button>
 								</CCardBody>
 							</CCard>
 						</CCol>
-						<CCol sm={3}>
+						<CCol sm={4}>
 							<CCard id="process-card" role="process-card">
-								<h4>04</h4>
 								<CCardBody id="process-card">
 									<CCardTitle id="process-card">Web Development</CCardTitle>
 									<CCardText id="process-card">this is step 4</CCardText>
-									<CButton id="process-card" href="# ">
+									<button id="process-card" href="# ">
 										<BsChevronRight />
-									</CButton>
+									</button>
 								</CCardBody>
 							</CCard>
 						</CCol>
@@ -88,10 +84,10 @@ const About = () => {
 						<br /> Amazing Clients
 					</h3>
 					<p>
-						Since 2015 I have been a visionary and a reliable <br />
-						software engineer partner for world-class
-						<br /> brands. These are the words we live by in
-						<br /> everything we do.
+						Since 2015 I have been a visionary and a reliable software engineer
+						partner
+						<br /> for world-class brands. These are the words we live by in
+						everything we do.
 					</p>
 				</section>
 				<section id="feedback">

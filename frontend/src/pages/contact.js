@@ -116,12 +116,7 @@ const Contact = () => {
 							></textarea>
 							<br />
 							<br />
-							<input
-								type="submit"
-								value="Leave a comment"
-								style={{ backgroundColor: '#537fe7', color: '#fff' }}
-								onClick={PostData}
-							/>
+							<input type="submit" value="Leave a comment" onClick={PostData} />
 						</form>
 					</section>
 				</div>
