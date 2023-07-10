@@ -7,19 +7,28 @@ import {
 	CRow,
 } from '@coreui/react';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import { BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs';
-import { LiteYoutubeEmbed } from 'react-lite-yt-embed';
+import MapWithMarker  from '../components/MapWithMarker';
+import { BsGithub, BsInstagram, BsLinkedin, BsFillArrowDownCircleFill } from 'react-icons/bs';
+import { LiteYoutubeEmbed } from 'react-lite-yt-embed'; 
+import { toast } from 'react-toastify';
+ 
 
 const Home = () => {
+	const handleHi=() => {
+		toast("😺 Hello Visitor");
+	};
+
 	return (
 		<div id="body">
 			<section id="define">
-				<div></div>
+				<div>			<MapWithMarker />  </div>
 				<div className="image-overlay">
-					<h3>Hi! I'm Prajwal Kuchewar -</h3>
+					<h3 className="btn btn-light" onClick={handleHi}>Hola! 👋</h3>
+					<h3>I'm Prajwal Kuchewar</h3>
 					<h4>Software Engineer</h4>
-					<p style={{ fontSize: 'x-small' }}>
+					<p className='fs-6 fw-light'>
 						Proactive student eager to contribute to the coding community
 						through hard work and dedication to quality. Seeking to use
 						exceptional communication skills as Link team member/software
@@ -27,9 +36,9 @@ const Home = () => {
 						Algorithms. Passionate about web development and user experience
 						design.
 					</p>
-
-					<button
-						className="button"
+					<div className='d-flex justify-content-end mt-3'>
+						<button
+						className="btn btn-dark"
 						style={{ marginRight: '5%' }}
 						onClick={() => {
 							var resumeLink = document.createElement('a');
@@ -42,14 +51,17 @@ const Home = () => {
 					>
 						Download CV
 					</button>
-					<button
-						type="button"
-						onClick={() =>
-							window.open('https://www.linkedin.com/in/prajwal018')
-						}
-					>
-						Hire Me Now
-					</button>
+						<button
+							className='btn btn-light'
+							type="button"
+							onClick={() =>
+								window.open('https://www.linkedin.com/in/prajwal018')
+							}
+						>
+							Hire Me Now
+						</button></div>
+					
+					<h6 className='d-flex justify-content-end mt-3 pt-3'>P.S. Pick this buddy to see the world <BsFillArrowDownCircleFill style={{ color: 'green' }} className='ms-2 color-cyan fs-5' /></h6>
 				</div>
 			</section>
 
@@ -94,7 +106,6 @@ const Home = () => {
 						</CCol>
 					</CRow>
 				</section>
-
 				<section id="about">
 					<div className="aboutme-text" style={{ textAlign: 'left' }}>
 						<h3>Need Creative Website?</h3>
