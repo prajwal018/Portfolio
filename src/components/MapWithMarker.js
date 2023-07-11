@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Map, Marker, InfoWindow, GoogleApiWrapper } from 'google-maps-react';
+import {GoogleApiWrapper } from 'google-maps-react';
 
 const MapWithMarker = (props) => {
   const { google } = props;
@@ -42,8 +42,7 @@ const MapWithMarker = (props) => {
   }, [google]);
 
   return <div id="map" style={{ height: '100vh' }}></div>;
-};
-
+}
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyBlRpCroToRdrmZf6ohB84zgRSLhihunQE',
+  apiKey: process.env.REACT_APP_API_KEY,
 })(MapWithMarker);
