@@ -54,7 +54,7 @@
 		"@types/bootstrap": "^5.2.6",
 		"react-router-dom": "^5.2.0",
 		"react-scripts": "^5.0.1",
-		"webpack": "^5.75.0",
+		"webpack": "^5.76.0",
 		"webpack-bundle-analyzer": "^4.8.0"
 	}
 }
